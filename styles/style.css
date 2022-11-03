@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(25, 32, 39);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.hero-image{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(/recurso-principal-254114529.jpg);
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+}
+.hero-text button:hover {
+    background-color: #555;
+    color: white;
+}
+
+.conteiner_1{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    align-items: center;
+    justify-items: center;
+/*-------------------------------*/
+    grid-template-areas: 
+        "a a a"
+        "b b b"
+        "c c c";
+/*-------------------------------*/
+
+    margin: 2em;
+    width: 95%;
+    height: 245vh;
+    border-radius: 20px;
+
+}
+
+.item1{
+    grid-area: a;
+    background-color: #306998;
+    width: 90vw;
+    height: 70vh;
+    border-radius: 10px;
+    
+}
+
+.item2{
+    grid-area: b;
+    width: 90vw;
+    height: 70vh;
+    border-radius: 10px;
+    background-color: #FFD43B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+img {
+    align-items: left;
+    justify-content: left;
+    float: none;
+    width: 300px;
+    height: 400px;
+}
+.item3{
+    grid-area: c;
+    background-color: #4B8BBE;
+    width: 90vw;
+    height: 70vh;
+    border-radius: 10px;
+}
+
+.NB_Wraap{
+    bottom: 0;
+    width: 100%;
+    position: sticky;
+    left: 0px;
+}
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgb(10, 1, 26);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #4B8BBE;
+}
+
+.active {
+    background-color:#306998;
+}
+
+.Footer{
+    position:static;
+    display: grid;
+    height: 42.2vh;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(38, 38, 46);
+    min-height: 20vh;
+    bottom: 0;
+    color: white;
+    width: 100%;
+}
+
+.pythonlog{
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 200px;
+    position: static;
+    text-align: center;
+}
